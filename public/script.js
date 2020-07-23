@@ -4,6 +4,8 @@ var clientId = '933bc67dd9ff18eab500e8992a6b6a5f',
 $(document).ready(function() {
   myTrack= "https://api.soundcloud.com/tracks/85758018";
   audioPlayer = new Audio(myTrack + '/stream?client_id=' + clientId);
+    console.log(audioPlayer);
+    console.log(`${myTrack}/stream?client_id=${clientId}`);
 });
 
 $('#play').on('click', function() {
